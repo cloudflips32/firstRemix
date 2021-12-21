@@ -1,4 +1,4 @@
-Blog Created using Remix, as dictated by Brad Traversy / Traversy Media.
+Blog created using Remix, as dictated by Brad Traversy / Traversy Media.
 
 Lesson URL
 
