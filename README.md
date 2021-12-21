@@ -1,4 +1,8 @@
-Blog created using Remix, as dictated by Brad Traversy / Traversy Media.
+Blog created using Remix, as dictated by Brad Traversy / Traversy Media. CRD Functionality
+
+![blog-posts](remix-posts.jpg)
+
+![new-post](remix-newpost.jpg)
 
 Lesson URL
 
