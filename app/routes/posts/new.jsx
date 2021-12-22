@@ -13,6 +13,10 @@ function validateBody(body) {
   }
 }
 
+function badRequest(data) {
+  return json(data, { status: 400 })
+}
+
 export const action = async ({ req }) => {
   const form = await req.formData()
   const title = form.get('title')
@@ -27,7 +31,7 @@ export const action = async ({ req }) => {
 
   if (Object.values(fieldErrors).some(Boolean)) {
     console.log(fieldErrors);
-    return json({ fieldErrors, fields }, { status: 400 })
+    return badReques({ fieldErrors, fields })
   }
 
   const post = await db.post.create({ data: fields })
