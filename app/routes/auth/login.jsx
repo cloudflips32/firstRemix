@@ -23,6 +23,27 @@ export const action = async ({ req }) => {
     return badRequest({ fieldErrors, fields })
   }
 
+  switch (loginType) {
+    case 'login': {
+      // Find User
+      // Check User
+      // Create User Session
+    }
+
+    case 'register': {
+      // Check If User Exists
+      // Create User
+      // Create User Session
+    }
+
+    default: {
+      return badRequest({
+        fields,
+        formError: 'Login type is not valid',
+      })
+    }
+  }
+
 }
 
 function Login() {
