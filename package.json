@@ -13,7 +13,7 @@
     "start": "remix-serve build"
   },
   "dependencies": {
-    "@prisma/client": "^3.6.0",
+    "@prisma/client": "^3.7.0",
     "@remix-run/react": "^1.1.1",
     "@remix-run/serve": "^1.1.1",
     "prisma": "^3.6.0",
