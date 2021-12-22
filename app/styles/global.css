@@ -23,6 +23,10 @@ p {
   margin: 10px 0;
 }
 
+ h1 {
+  text-align: center;
+}
+
 .container {
   width: 100%;
   max-width: 960px;
