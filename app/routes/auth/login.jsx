@@ -1,5 +1,6 @@
 import { useActionData, json, redirect } from 'remix'
 import { db } from '~/utils/db.server'
+import { login } from '~/utils/sessions.server'
 
 function badRequest(data) {
   return json(data, { status: 400 })
@@ -26,7 +27,14 @@ export const action = async ({ req }) => {
   switch (loginType) {
     case 'login': {
       // Find User
+      const user = await login({ username, password })
       // Check User
+      if (!user) {
+        return badRequest({
+          fields,
+          fieldErrors: { username: 'Invalid Credentials' }
+        })
+      }
       // Create User Session
     }
 
