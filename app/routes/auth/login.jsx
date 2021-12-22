@@ -1,6 +1,6 @@
 import { useActionData, json, redirect } from 'remix'
 import { db } from '~/utils/db.server'
-import { login } from '~/utils/sessions.server'
+import { login, createUserSession } from '~/utils/session.server'
 
 function badRequest(data) {
   return json(data, { status: 400 })
@@ -36,6 +36,7 @@ export const action = async ({ req }) => {
         })
       }
       // Create User Session
+      return createUserSession(user.id, '/posts')
     }
 
     case 'register': {
