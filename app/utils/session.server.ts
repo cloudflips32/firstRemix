@@ -19,6 +19,17 @@ export async function login({ username, password }) {
 
   return user
 }
+
+// Register New User
+export async function register({ username, password }) {
+  const passwordHash = await bcrypt.hash(password, 10)
+  return db.user.create({
+    data: {
+      username,
+      passwordHash
+    }
+  })
+}
 // Get Session Secret
 const sessionSecret = process.env.SESSION_SECRET
 if (!sessionSecret) {
