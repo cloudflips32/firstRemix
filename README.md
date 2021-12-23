@@ -2,7 +2,8 @@ Blog created using Remix, as dictated by ***Brad Traversy / Traversy Media.***
 
 ![blog-posts](remix-posts.jpg)
 
-CRD Functionality. Auth and user login/logout to be added soon.
+12/20- CRD Functionality. Auth and user login/logout to be added soon.
+12/22- Completed with CRUD, user login and authentication!
 
 ![new-post](remix-newpost.jpg)
 
