@@ -1,4 +1,4 @@
-Blog created using Remix, as dictated by ***Brad Traversy / Traversy Media.***  
+Blog created using Remix, as directed by ***Brad Traversy / Traversy Media.***  
 
 ![blog-posts](remix-posts.jpg)
 
